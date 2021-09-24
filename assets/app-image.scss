@@ -1,0 +1,57 @@
+@import '../assets/main.scss';
+.image-card {
+  border-radius: 5px;
+  @include flexCenterAll;
+  flex-direction: column;
+  flex: 1;
+  min-width: 300px;
+  padding: 10px;
+  @include shadow;
+  margin: 5px;
+  &:nth-child(1) {
+    margin-left: 0;
+  }
+}
+img {
+  width: 100%;
+  flex: 1;
+  cursor: pointer;
+}
+.image-body {
+  width: 100%;
+  h2 {
+    span {
+      margin-left: 5px;
+    }
+  }
+  p {
+    font-weight: bold;
+    span {
+      font-weight: normal;
+      margin-left: 10px;
+    }
+  }
+}
+.tags {
+  @include flex;
+  justify-content: space-around;
+  span.tag {
+    padding: 2px 15px !important;
+    height: 20px !important;
+    margin-left: 0.75em;
+    line-height: 22px !important;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+    display: inline;
+    border-radius: 4px;
+    font-size: 12px;
+    text-transform: capitalize;
+    background: #eee;
+    letter-spacing: 1px;
+    width: max-content;
+    font-weight: bold;
+    cursor: pointer;
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+}

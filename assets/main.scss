@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Product+Sans:wght@200;400;600&display=swap');
+body {
+  font-family: 'Product Sans';
+  --color: #001928;
+  color: var(--color);
+}
+@mixin flex {
+  display: flex;
+}
+
+@mixin flexCenter {
+  @include flex();
+  justify-content: center;
+}
+
+@mixin flexCenterVariant {
+  @include flex();
+  align-items: center;
+}
+
+@mixin flexCenterAll {
+  @include flexCenter();
+  align-items: center;
+}
+
+@mixin btn {
+  border: none;
+  letter-spacing: 2px;
+  font-size: initial;
+  cursor: pointer;
+  text-transform: capitalize;
+  text-align: center;
+  min-width: 170px;
+  background: #0e638e;
+  color: #fff;
+  border-radius: 5px;
+  transition: 0.3s;
+  z-index: 4;
+  padding: 12px 30px;
+
+  &:hover {
+    background: #0e638e;
+    @include shadow;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+@mixin shadow {
+  box-shadow: 0 0 2px rgba($color: #000000, $alpha: 0.2);
+}
