@@ -6,6 +6,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start -p $PORT",
+    "heroku-postbuild": "heroku-nextjs-build",
     "generate": "nuxt generate"
   },
   "dependencies": {
