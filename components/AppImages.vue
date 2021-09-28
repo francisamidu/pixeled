@@ -54,8 +54,6 @@ export default {
     searchImages(tag) {
       if (typeof tag === 'string') {
         this.term = tag
-      } else {
-        this.term = ''
       }
       const images = this.getImageByTag
       this.setImages(images)
