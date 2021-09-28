@@ -29,15 +29,14 @@
 <script>
 import Vue from 'vue'
 import { mapGetters } from 'vuex'
-import { mapActions } from "vuex"
+import { mapActions } from 'vuex'
 export default {
   data: () => ({
     term: '',
     imageList: [],
   }),
   async created() {
-    this.setImages(this.images)
-    await this.getImages()
+    this.getImages().then(() => this.setImages(this.images))
   },
   computed: {
     ...mapGetters({
@@ -50,8 +49,9 @@ export default {
   },
   methods: {
     ...mapActions({
-      getImages:'images/getImages'
-    }),    searchImages(tag) {
+      getImages: 'images/getImages',
+    }),
+    searchImages(tag) {
       if (typeof tag === 'string') {
         this.term = tag
       } else {
