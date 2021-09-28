@@ -30,7 +30,7 @@ export const mutations = {
 export const actions = {
   async getImages(store, term) {
     try {
-      const data = await Api.getImages(term)
+      const data = await Api.getImages(term || '')
       store.commit('SET_IMAGES', data?.hits)
     } catch (error) {
       console.log(error)
