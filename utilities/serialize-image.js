@@ -5,7 +5,6 @@ const serializeImage = (image) => ({
   downloads: image?.downloads,
   views: image?.views,
   tags: image?.tags?.split(','),
-  url: image?.pageURL,
   user: image.user,
 })
 
