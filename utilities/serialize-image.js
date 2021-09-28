@@ -1,6 +1,6 @@
 const serializeImage = (image) => ({
   id: image?.id,
-  url: image?.webFormatURL,
+  url: image?.webformatURL,
   likes: image?.likes,
   downloads: image?.downloads,
   views: image?.views,
