@@ -1,6 +1,8 @@
 # Pixeled
 
-This is a [Nuxt.js] image gallery project. It uses the Pixabay API to retrieve and show images
+This is a [Nuxt.js](https://nuxtjs.org) image gallery project. It uses the Pixabay API to retrieve and show images
+
+<img src="https://i.postimg.cc/HV7TZFkQ/pixeled.jpg" alt="Pixeled" width="100%" />
 
 ## Live Site (Production)
 
